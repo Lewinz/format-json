@@ -23,7 +23,18 @@
             "key": "ctrl+shift+j",
             "mac": "cmd+shift+j",
             "when": "editorHasSelection"
-        }]
+        }],
+        "configuration": {
+            "title": "format-json.configuration",
+            "type": "object",
+            "properties": {
+                "format-json.configuration.space_count": {
+                    "type": "integer",
+                    "default": 2,
+                    "description": "缩进空格数"
+                }
+            }
+        }
     },
     "scripts": {
         "lint": "eslint .",
