@@ -1,6 +1,7 @@
 {
     "name": "format-json",
     "displayName": "format-json",
+    "publisher": "freedom-compile",
     "description": "",
     "version": "0.0.1",
     "engines": {
