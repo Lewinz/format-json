@@ -15,16 +15,20 @@
     ],
     "main": "./extension.js",
     "contributes": {
-        "commands": [{
-            "command": "format-json",
-            "title": "Format the selected JSON data"
-        }],
-        "keybindings": [{
-            "command": "format-json",
-            "key": "ctrl+shift+j",
-            "mac": "cmd+shift+j",
-            "when": "editorHasSelection"
-        }],
+        "commands": [
+            {
+                "command": "format-json",
+                "title": "Format the selected JSON data"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "format-json",
+                "key": "ctrl+shift+j",
+                "mac": "cmd+shift+j",
+                "when": "editorHasSelection"
+            }
+        ],
         "configuration": {
             "title": "format-json.configuration",
             "type": "object",
@@ -53,5 +57,4 @@
         "typescript": "^4.5.5",
         "@vscode/test-electron": "^2.1.2"
     }
-
 }

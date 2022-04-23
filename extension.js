@@ -1,6 +1,5 @@
 const vscode = require('vscode');
 
-
 /**
  * @param {vscode.ExtensionContext} context
  */
@@ -9,8 +8,6 @@ function activate(context) {
     console.log('Congratulations, your extension "format-json" is now active!');
 
     let disposable = vscode.commands.registerCommand('format-json', function() {
-        vscode.window.showInformationMessage('Hello World from format-json!');
-
         // 获取当前打开的文件的 editor，如果没有则返回
         const editor = vscode.window.activeTextEditor
         if (!editor) return;
